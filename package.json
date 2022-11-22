@@ -1,0 +1,29 @@
+{
+  "name": "marked-katex-extension-ts",
+  "version": "0.1.0",
+  "description": "typescript version marked-katex-extion ",
+  "module": "index.ts",
+  "types": "./lib/index.d.ts",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npx tsc"
+  },
+  "keywords": [
+    "marked",
+    "katex",
+    "extension"
+  ],
+  "author": "hayato-SMZ",
+  "license": "MIT",
+  "dependencies": {
+    "katex": "^0.16.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "marked": "^4.2.3",
+    "@types/marked": "^4.0.7",
+    "@types/katex": "^0.14.0",
+    "@types/node": "^18.11.9"
+  }
+}
