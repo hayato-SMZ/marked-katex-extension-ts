@@ -15,7 +15,8 @@
   "keywords": [
     "marked",
     "katex",
-    "extension"
+    "extension",
+    "typescript"
   ],
   "author": "hayato-SMZ",
   "license": "MIT",
