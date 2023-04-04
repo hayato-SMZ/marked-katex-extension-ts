@@ -26,7 +26,12 @@ function inlineKatex(
       }
     },
     renderer(token) {
-      return katex.renderToString(token.text, options);
+      try {
+        return katex.renderToString(token.text, options);
+      } catch (e: any) {
+        console.log(e);
+        return e.message;
+      }
     },
   };
 }
@@ -51,7 +56,12 @@ function blockKatex(
       }
     },
     renderer(token) {
-      return `<p>${katex.renderToString(token.text, options)}</p>`;
+      try {
+        return `<p>${katex.renderToString(token.text, options)}</p>`;
+      } catch (e: any) {
+        console.log(e);
+        return ""
+      }
     },
   };
 }
